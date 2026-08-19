@@ -1,0 +1,122 @@
+[
+  {
+    "id": "p1",
+    "name": "Ankara Wrap Dress",
+    "category": "Women",
+    "description": "Bold ankara print wrap dress, true to size, breathable cotton blend.",
+    "price": 15000,
+    "image": "https://images.pexels.com/photos/32289598/pexels-photo-32289598.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "featured": true,
+    "slug": "ankara-wrap-dress"
+  },
+  {
+    "id": "p2",
+    "name": "Men's Slim-Fit Blazer",
+    "category": "Men",
+    "description": "Sharp slim-fit blazer for office, dates and events. Available in 3 colours.",
+    "price": 32000,
+    "image": "https://images.pexels.com/photos/30947677/pexels-photo-30947677.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "featured": true,
+    "slug": "mens-slim-fit-blazer"
+  },
+  {
+    "id": "p3",
+    "name": "Classic Leather Loafers",
+    "category": "Shoes",
+    "description": "Genuine leather loafers with cushioned sole, perfect for all-day wear.",
+    "price": 28000,
+    "image": "https://images.pexels.com/photos/38570108/pexels-photo-38570108.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "featured": true,
+    "slug": "classic-leather-loafers"
+  },
+  {
+    "id": "p4",
+    "name": "Oversized Denim Jacket",
+    "category": "Women",
+    "description": "Trendy oversized denim jacket, layers perfectly over any outfit.",
+    "price": 19500,
+    "image": "https://images.pexels.com/photos/4142542/pexels-photo-4142542.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "featured": true,
+    "slug": "oversized-denim-jacket"
+  },
+  {
+    "id": "p5",
+    "name": "Structured Tote Bag",
+    "category": "Bags",
+    "description": "Faux-leather structured tote with gold-tone hardware, roomy interior.",
+    "price": 12000,
+    "image": "https://images.pexels.com/photos/6787035/pexels-photo-6787035.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "featured": true,
+    "slug": "structured-tote-bag"
+  },
+  {
+    "id": "p6",
+    "name": "Men's Casual Sneakers",
+    "category": "Shoes",
+    "description": "Lightweight everyday sneakers with breathable knit upper.",
+    "price": 21000,
+    "image": "https://images.pexels.com/photos/1848733/pexels-photo-1848733.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "featured": true,
+    "slug": "mens-casual-sneakers"
+  },
+  {
+    "id": "p7",
+    "name": "Quilted Crossbody Bag",
+    "category": "Bags",
+    "description": "Chic quilted crossbody bag with chain strap, fits all daily essentials.",
+    "price": 14500,
+    "image": "https://images.pexels.com/photos/4015610/pexels-photo-4015610.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "featured": false,
+    "slug": "quilted-crossbody-bag"
+  },
+  {
+    "id": "p8",
+    "name": "Men's Kaftan Set",
+    "category": "Men",
+    "description": "Premium embroidered kaftan set, perfect for owambe and formal events.",
+    "price": 26000,
+    "image": "https://images.pexels.com/photos/34821105/pexels-photo-34821105.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "featured": true,
+    "slug": "mens-kaftan-set"
+  },
+  {
+    "id": "p9",
+    "name": "High-Waist Palazzo Trousers",
+    "category": "Women",
+    "description": "Flowy high-waist palazzo trousers, pairs with almost anything.",
+    "price": 13500,
+    "image": "https://images.pexels.com/photos/2659787/pexels-photo-2659787.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "featured": false,
+    "slug": "high-waist-palazzo-trousers"
+  },
+  {
+    "id": "p10",
+    "name": "Woven Straw Handbag",
+    "category": "Bags",
+    "description": "Handwoven straw handbag with leather trim, perfect for casual outings.",
+    "price": 9500,
+    "image": "https://images.pexels.com/photos/5591743/pexels-photo-5591743.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "featured": false,
+    "slug": "woven-straw-handbag"
+  },
+  {
+    "id": "p11",
+    "name": "Men's Pique Polo Shirt",
+    "category": "Men",
+    "description": "Breathable pique cotton polo, smart-casual fit, available in assorted colours.",
+    "price": 8500,
+    "image": "https://images.pexels.com/photos/17987935/pexels-photo-17987935.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "featured": false,
+    "slug": "mens-pique-polo-shirt"
+  },
+  {
+    "id": "p12",
+    "name": "Strappy Block Heels",
+    "category": "Shoes",
+    "description": "Comfort-cushioned block heels with adjustable ankle strap.",
+    "price": 24500,
+    "image": "https://images.pexels.com/photos/36589774/pexels-photo-36589774.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "featured": false,
+    "slug": "strappy-block-heels"
+  }
+]

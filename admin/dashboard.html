@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Admin Dashboard — B'JAY CLOSET</title>
+<meta name="robots" content="noindex, nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/admin/dashboard.css?v=3" />
+</head>
+<body>
+
+<header class="admin-header">
+  <div class="admin-header-inner">
+    <div class="admin-logo">B'JAY <span>CLOSET</span> <span class="admin-tag">Admin</span></div>
+    <div class="admin-header-actions">
+      <a href="/" target="_blank" rel="noopener" class="link-btn-outline">View Storefront</a>
+      <button type="button" class="link-btn-outline" id="changePasswordBtn">Change Password</button>
+      <button type="button" class="btn-danger" id="logoutBtn">Log Out</button>
+    </div>
+  </div>
+</header>
+
+<main class="admin-main">
+  <div class="admin-toolbar">
+    <div>
+      <h1>Products</h1>
+      <p id="productCount" class="muted"></p>
+    </div>
+    <button type="button" class="btn-primary" id="addProductBtn">+ Add Product</button>
+  </div>
+
+  <div class="admin-filter-bar" id="adminFilterBar">
+    <button class="filter-chip active" data-category="All">All</button>
+    <button class="filter-chip" data-category="Women">Women</button>
+    <button class="filter-chip" data-category="Men">Men</button>
+    <button class="filter-chip" data-category="Shoes">Shoes</button>
+    <button class="filter-chip" data-category="Bags">Bags</button>
+  </div>
+
+  <p class="admin-error" id="listError" hidden></p>
+
+  <div class="admin-table-wrap">
+    <table class="admin-table">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Price</th>
+          <th>Featured</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="productTableBody"></tbody>
+    </table>
+  </div>
+</main>
+
+<!-- Product form modal -->
+<div class="modal-overlay" id="productModalOverlay" hidden>
+  <div class="modal">
+    <div class="modal-header">
+      <h2 id="productModalTitle">Add Product</h2>
+      <button type="button" class="modal-close" id="productModalClose" aria-label="Close">&times;</button>
+    </div>
+
+    <form id="productForm">
+      <input type="hidden" id="productId" />
+
+      <div class="form-field">
+        <label for="productName">Product name</label>
+        <input type="text" id="productName" placeholder="e.g. Ankara Wrap Dress" required />
+      </div>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label for="productCategory">Category</label>
+          <select id="productCategory" required>
+            <option value="Women">Women</option>
+            <option value="Men">Men</option>
+            <option value="Shoes">Shoes</option>
+            <option value="Bags">Bags</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="productPrice">Price (₦)</label>
+          <input type="number" id="productPrice" min="0" step="1" placeholder="e.g. 15000" required />
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="productDescription">Description</label>
+        <textarea id="productDescription" rows="3" placeholder="Short, appealing description of the item" required></textarea>
+      </div>
+
+      <div class="form-field">
+        <label for="productImageFile">Product image</label>
+        <input type="file" id="productImageFile" accept="image/jpeg,image/png,image/webp,image/gif" />
+        <p class="field-hint" id="imageHint">JPG, PNG, WEBP or GIF, up to 5MB.</p>
+        <img id="productImagePreview" class="image-preview" hidden alt="Preview" />
+      </div>
+
+      <label class="checkbox-field">
+        <input type="checkbox" id="productFeatured" />
+        Show on homepage as a featured product
+      </label>
+
+      <p class="admin-error" id="formError" hidden></p>
+
+      <div class="modal-actions">
+        <button type="button" class="link-btn-outline" id="productCancelBtn">Cancel</button>
+        <button type="submit" class="btn-primary" id="productSaveBtn">Save Product</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Change password modal -->
+<div class="modal-overlay" id="passwordModalOverlay" hidden>
+  <div class="modal modal-small">
+    <div class="modal-header">
+      <h2>Change Password</h2>
+      <button type="button" class="modal-close" id="passwordModalClose" aria-label="Close">&times;</button>
+    </div>
+
+    <form id="passwordForm">
+      <div class="form-field">
+        <label for="currentPassword">Current password</label>
+        <input type="password" id="currentPassword" required />
+      </div>
+      <div class="form-field">
+        <label for="newPassword">New password (min. 8 characters)</label>
+        <input type="password" id="newPassword" minlength="8" required />
+      </div>
+      <p class="admin-error" id="passwordError" hidden></p>
+      <p class="admin-success" id="passwordSuccess" hidden></p>
+      <div class="modal-actions">
+        <button type="button" class="link-btn-outline" id="passwordCancelBtn">Cancel</button>
+        <button type="submit" class="btn-primary">Update Password</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="/admin/dashboard.js?v=3"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "businessName": "B'JAY CLOSET",
+  "tagline": "Quality Women's & Men's Fashion, Shoes and Bags in Abuja",
+  "description": "Discover stylish women's wears, men's wears, shoes and bags at B'JAY CLOSET. Message us on WhatsApp and get your order delivered quickly and safely across FCT Abuja and beyond.",
+  "whatsappNumber": "2348060543157",
+  "email": "hello@bjaycloset.com",
+  "instagram": "https://instagram.com/phonelord_",
+  "address": "FCT Abuja, Nigeria",
+  "heroImage": "https://images.pexels.com/photos/18645340/pexels-photo-18645340.jpeg?auto=compress&cs=tinysrgb&w=900",
+  "currencySymbol": "₦",
+  "whyUs": [
+    {
+      "icon": "✨",
+      "title": "Curated Styles",
+      "text": "Every piece is hand-picked for quality, fit and the latest trends so you always look your best."
+    },
+    {
+      "icon": "🦋",
+      "title": "Fast Delivery",
+      "text": "Order today and get fast, safe delivery within Abuja and across Nigeria — tracked from checkout to your door."
+    },
+    {
+      "icon": "💬",
+      "title": "Easy WhatsApp Ordering",
+      "text": "No account needed. Tap Order, confirm details on WhatsApp, and you're done."
+    },
+    {
+      "icon": "🔄",
+      "title": "Size & Swap Support",
+      "text": "Wrong size? We make exchanges simple — just message us within 48 hours of delivery."
+    }
+  ]
+}

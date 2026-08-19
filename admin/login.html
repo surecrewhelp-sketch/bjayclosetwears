@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Admin Login — B'JAY CLOSET</title>
+<meta name="robots" content="noindex, nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/admin/login.css" />
+</head>
+<body>
+
+<div class="login-page">
+  <div class="login-card">
+    <div class="login-logo">B'JAY <span>CLOSET</span></div>
+    <p class="login-subtitle">Admin sign in</p>
+
+    <form id="loginForm" novalidate>
+      <div class="form-field">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" autocomplete="username" required />
+      </div>
+      <div class="form-field">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" autocomplete="current-password" required />
+      </div>
+      <p class="login-error" id="loginError" hidden></p>
+      <button type="submit" class="login-btn" id="loginBtn">Sign In</button>
+    </form>
+
+    <a class="back-link" href="/">&larr; Back to storefront</a>
+  </div>
+</div>
+
+<script src="/admin/login.js"></script>
+</body>
+</html>

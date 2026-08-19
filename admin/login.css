@@ -1,0 +1,88 @@
+:root {
+  --brand: #c2185b;
+  --brand-dark: #8e1147;
+  --ink: #201a1d;
+  --ink-soft: #6b6066;
+  --border: #f0e2e6;
+  --bg-alt: #fbf6f7;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: linear-gradient(160deg, #fce4ec 0%, #fff 60%);
+  color: var(--ink);
+  min-height: 100vh;
+  display: flex;
+}
+
+.login-page {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 380px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 36px 32px;
+  box-shadow: 0 20px 50px rgba(32, 26, 29, 0.1);
+  text-align: center;
+}
+
+.login-logo { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; }
+.login-logo span { color: var(--brand); }
+.login-subtitle { color: var(--ink-soft); margin: 6px 0 28px; font-size: 0.92rem; }
+
+form { display: flex; flex-direction: column; gap: 16px; text-align: left; }
+
+.form-field { display: flex; flex-direction: column; gap: 6px; }
+.form-field label { font-size: 0.85rem; font-weight: 600; }
+.form-field input {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+.form-field input:focus { outline: none; border-color: var(--brand); }
+
+.login-error {
+  color: #b3261e;
+  background: #fdecea;
+  border: 1px solid #f6c6c2;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.login-btn {
+  background: var(--brand);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 13px 20px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.15s ease, opacity 0.15s ease;
+}
+.login-btn:hover { background: var(--brand-dark); }
+.login-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.back-link {
+  display: inline-block;
+  margin-top: 22px;
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+.back-link:hover { color: var(--brand); }

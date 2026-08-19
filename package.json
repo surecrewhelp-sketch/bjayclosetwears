@@ -1,0 +1,22 @@
+{
+  "name": "bjay-closet",
+  "version": "1.0.0",
+  "private": true,
+  "description": "B'JAY CLOSET storefront with an admin backend for managing products.",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "create-admin": "node scripts/create-admin.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.2.0",
+    "express-session": "^1.18.0",
+    "helmet": "^7.1.0",
+    "multer": "^2.0.1"
+  }
+}
