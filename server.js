@@ -127,6 +127,8 @@ app.use('/css', express.static(path.join(__dirname, 'css')));
 app.use('/js', express.static(path.join(__dirname, 'js')));
 app.use('/data', express.static(DATA_DIR));
 app.use('/uploads', express.static(UPLOADS_DIR));
+app.get('/favicon.svg', (req, res) => res.type('image/svg+xml').sendFile(path.join(__dirname, 'favicon.svg')));
+app.get('/favicon.ico', (req, res) => res.redirect(301, '/favicon.svg'));
 
 // Clean URLs (no .html) — old .html links 301-redirect to the clean path so
 // nothing breaks for anyone with an old link bookmarked.
